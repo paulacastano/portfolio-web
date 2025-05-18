@@ -1,0 +1,8 @@
+.sidebar {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
