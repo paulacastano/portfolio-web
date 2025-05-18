@@ -1,7 +1,14 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button aria-label="Example icon-button with menu icon">
-    <mat-icon>face</mat-icon>
+<mat-toolbar color="primary" class="header-container">
+  <div>
+    <span class="logo">PC</span>
+  </div>
+  <div class="header-options-container">
+    <span>Inicio</span>
+    <span>Sobre Mi</span>
+    <span>Blog</span>
+    <span>Contacto</span>
+  </div>
+  <button (click)="enviarCorreo()" mat-icon-button aria-label="contactame">
+    <mat-icon>email</mat-icon>
   </button>
-  <span class="spacer"></span>
-  <span>My App</span>
 </mat-toolbar>

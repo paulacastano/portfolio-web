@@ -10,4 +10,14 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  enviarCorreo() {
+    const destinatario = 'paulacastano19@gmail.com';
+    const asunto = 'Hola';
+    const cuerpo = 'Escribe tu mensaje aquí';
+    const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${destinatario}&su=${encodeURIComponent(
+      asunto
+    )}&body=${encodeURIComponent(cuerpo)}`;
+    window.open(url, '_blank');
+  }
+}

@@ -1,3 +1,22 @@
-.spacer {
-  flex: 1 1 auto;
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.header-options-container {
+  display: flex;
+  gap: 20px;
+}
+
+.header-options-container span:hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
 }
