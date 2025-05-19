@@ -1,0 +1,52 @@
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tool-card {
+  background-color: #f3f6ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgb(63 81 181 / 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  cursor: default;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgb(63 81 181 / 0.3);
+}
+
+.tool-icon {
+  color: #0481ff; /* un azul vibrante */
+  font-size: 25px; /* tamaño suficiente para que se vean bien */
+  margin-bottom: 12px;
+}
+
+.tool-card:hover .tool-icon {
+  color: #0d47a1; /* azul más oscuro al hover */
+}
+
+.tool-name {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #292929;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

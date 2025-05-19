@@ -1,0 +1,75 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.about-card {
+  max-width: 800px;
+  width: 100%;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+.text-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.text-column p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons mat-icon {
+  color: #0a66c2; /* LinkedIn azul */
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.social-icons mat-icon:hover {
+  transform: scale(1.2);
+  color: #0077b5;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}

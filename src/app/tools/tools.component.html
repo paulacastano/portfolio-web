@@ -1,0 +1,7 @@
+<h2 class="title">Herramientas con las que me he familiarizado</h2>
+<div class="tools-grid">
+  <div *ngFor="let tool of tools" class="tool-card">
+    <i [class]="tool.icon + ' tool-icon'"></i>
+    <div class="tool-name">{{ tool.name }}</div>
+  </div>
+</div>
