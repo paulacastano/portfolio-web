@@ -11,9 +11,36 @@
   gap: 20px;
 }
 
-.header-options-container span:hover {
-  cursor: pointer;
+.header-options-container a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.header-options-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.header-options-container a:hover {
   color: #007bff;
+}
+
+.header-options-container a:hover::after {
+  width: 100%;
+}
+
+.header-options-container a:visited {
+  color: black;
 }
 
 .logo {
