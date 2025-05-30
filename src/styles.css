@@ -1,15 +1,25 @@
+/* Fuente principal importada desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
+/* Estilo global: se aplica la fuente Poppins a todos los elementos */
 * {
   font-family: "Poppins", sans-serif;
 }
 
+/* Contenedor principal de la app:
+   - Ocupa toda la altura de la pantalla
+   - Usa flexbox para organizar el layout
+   - Fondo azul claro */
 .main-container {
   display: flex;
   height: 100vh;
   background-color: #a3b2ff;
 }
 
+/* Sección de contenido:
+   - Ocupa todo el espacio disponible dentro del contenedor
+   - Organización en columna
+   - Espaciado interior amplio */
 .content {
   flex: 1;
   display: flex;

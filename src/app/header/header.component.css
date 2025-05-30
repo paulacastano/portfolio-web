@@ -1,3 +1,9 @@
+/* 
+  Estilos para el contenedor principal del header.
+  Se usa flexbox para distribuir los elementos horizontalmente,
+  con espacio alrededor y centrados verticalmente.
+  Fondo claro y padding para separación interna.
+*/
 .header-container {
   display: flex;
   justify-content: space-around;
@@ -6,35 +12,46 @@
   background-color: #f8f9fa;
 }
 
+/* Estilos para el contenedor de opciones del header.
+   Se usa flexbox para alinear los enlaces horizontalmente
+   con un espacio entre ellos. */
 .header-options-container {
   display: flex;
   gap: 20px;
 }
 
+/* Estilo básico para los enlaces: */
 .header-options-container a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 4px 0;
-  transition: color 0.3s ease;
+  position: relative; /* Para el efecto de subrayado animado */
+  text-decoration: none; /* Sin subrayado por defecto */
+  color: black; /* Color del texto */
+  font-weight: bold; /* Negrita para destacar */
+  padding: 4px 0; /* Espacio vertical para el efecto de subrayado */
+  transition: color 0.3s ease; /* Transición suave para el color */
 }
 
+/* Efecto de subrayado animado al pasar el mouse */
 .header-options-container a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0%;
-  height: 2px;
-  background-color: #007bff;
-  transition: width 0.3s ease;
+  content: ""; /* Contenido vacío para el pseudo-elemento */
+  position: absolute; /* Posicionamiento absoluto relativo al enlace */
+  left: 0; /* Alineado al inicio del enlace */
+  bottom: -2px; /* Posicionado justo debajo del enlace */
+  width: 0%; /* Ancho inicial del subrayado */
+  height: 2px; /* Altura del subrayado */
+  background-color: #007bff; /* Color del subrayado */
+  transition: width 0.3s ease; /* Transición suave para el ancho */
 }
 
+/* 
+  Expansión del subrayado animado cuando el cursor está sobre el enlace.
+*/
 .header-options-container a:hover {
   color: #007bff;
 }
 
+/* 
+  Mantener el color negro para los enlaces visitados.
+*/
 .header-options-container a:hover::after {
   width: 100%;
 }

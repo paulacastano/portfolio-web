@@ -1,3 +1,8 @@
+/* 
+  Estilos para la sección "Sobre mí" que contiene la foto y texto de presentación.
+  Se usa flexbox para colocar la imagen y el texto lado a lado con espacio entre ellos.
+  La fuente y colores son definidos para buena legibilidad.
+*/
 .about-me {
   max-width: 900px;
   margin: 60px auto;
@@ -9,33 +14,41 @@
   color: #333;
 }
 
+/* Estilos para la foto de perfil y el texto de presentación */
 .about-photo {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #ddd;
-  flex-shrink: 0;
+  width: 260px; /* Ancho fijo para la imagen */
+  height: 260px; /* Altura fija para la imagen */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  border-radius: 50%; /* Hace la imagen circular */
+  border: 4px solid #ddd; /* Borde sutil alrededor de la imagen */
+  flex-shrink: 0; /* Evita que la imagen se reduzca en pantallas pequeñas */
 }
 
+/* Estilos para el título principal */
 .about-text h1 {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
+/* Estilos para el subtítulo */
 .about-text h2 {
   font-size: 18px;
   color: #777;
   margin-bottom: 20px;
 }
 
+/* Estilos para el párrafo de texto descriptivo */
 .about-text p {
   font-size: 16px;
   line-height: 1.7;
 }
 
-/* Responsive para celular */
+/* 
+  Ajustes responsive para dispositivos móviles:
+  Cambia la dirección del flex a columna y centra el texto,
+  además da espacio extra debajo de la imagen para que no se vea amontonado.
+*/
 @media (max-width: 768px) {
   .about-me {
     flex-direction: column;

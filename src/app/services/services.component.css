@@ -1,43 +1,49 @@
+/* Estilos para el componente de servicios */
 .services-container {
   text-align: center;
   padding: 40px 20px;
   font-family: "Roboto", sans-serif;
 }
 
+/*Título con tamaño y color destacado*/
 .title {
-  font-weight: 500;
-  margin-bottom: 30px;
-  font-size: 26px;
-  color: #333;
+  font-weight: 500; /* peso de fuente medio */
+  margin-bottom: 30px; /* espacio debajo del título */
+  font-size: 26px; /* tamaño de fuente */
+  color: #333; /* color del texto */
 }
 
+/* Contenedor de tarjetas de servicios */
 .cards-container {
   display: flex;
   justify-content: center;
   gap: 30px; /* espacio entre tarjetas */
   flex-wrap: wrap;
 }
-
+/* Estilos para las tarjetas de servicios */
 .service-card {
-  width: 200px;
-  padding: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  background-color: #fff;
+  width: 200px; /* ancho fijo para las tarjetas */
+  padding: 16px; /* espacio interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
+  border-radius: 12px; /* bordes redondeados */
+  text-align: center; /* centrado de texto */
+  transition: transform 0.3s ease; /* transición suave al hacer hover */
+  background-color: #fff; /* fondo blanco */
 }
 
+/* Efecto hover para las tarjetas */
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Icono de servicio */
 .service-icon {
   margin-bottom: 15px;
   color: #1976d2; /* azul primario material */
 }
 
+/* Títulos de servicios */
 h3 {
   font-weight: 400;
   margin-bottom: 12px;
@@ -45,6 +51,7 @@ h3 {
   font-size: 18px;
 }
 
+/* Descripción de servicios */
 p {
   color: #555;
   font-size: 14px;

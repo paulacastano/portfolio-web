@@ -1,30 +1,35 @@
+/* Estilos para la sección "about" */
 .about-section {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
-  background: #f8f9fa;
+  display: flex; /* Flexbox para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  padding: 60px 20px; /* Espacio alrededor del contenido */
+  background: #f8f9fa; /* Color de fondo claro */
 }
 
+/* Estilo de la tarjeta principal (Angular Material):*/
 .about-card {
-  max-width: 800px;
-  width: 100%;
-  padding: 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 800px; /* Ancho máximo de la tarjeta */
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+  padding: 32px; /* Espacio interno de la tarjeta */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra sutil */
 }
 
+/* Contenedor interno de la tarjeta:*/
 .about-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 32px;
-  align-items: center;
+  display: flex; /* Flexbox para organizar el contenido */
+  flex-direction: row; /* Dirección de las columnas */
+  flex-wrap: wrap; /* Permitir que las columnas se ajusten en pantallas pequeñas */
+  gap: 32px; /* Espacio entre columnas */
+  align-items: center; /* Alinear verticalmente al centro */
 }
 
+/* Columna de texto con ancho flexible */
 .text-column {
   flex: 1;
   min-width: 300px;
 }
 
+/* Títulos principales de la sección con distintos pesos y colores */
 .title {
   font-size: 28px;
   font-weight: 700;
@@ -39,22 +44,25 @@
   margin-bottom: 16px;
 }
 
+/* Estilo del párrafo: legibilidad mejorada */
 .text-column p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
+  font-size: 16px; /* Tamaño de fuente legible */
+  color: #444; /* Color de texto oscuro */
+  line-height: 1.6; /* Espaciado entre líneas */
 }
 
+/* Contenedor de iconos sociales:*/
 .social-icons {
-  margin-top: 20px;
-  display: flex;
-  gap: 16px;
+  margin-top: 20px; /* Espacio superior */
+  display: flex; /* Flexbox para alinear los iconos */
+  gap: 16px; /* Espacio entre iconos */
 }
 
+/* Estilo de los íconos (usando Angular Material Icons):*/
 .social-icons mat-icon {
   color: #0a66c2; /* LinkedIn azul */
-  transition: transform 0.2s ease;
-  cursor: pointer;
+  transition: transform 0.2s ease; /* Transición suave al hacer hover */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
 }
 
 .social-icons mat-icon:hover {
@@ -62,12 +70,15 @@
   color: #0077b5;
 }
 
+/* Columna que contiene la imagen:
+   - Centrada horizontalmente */
 .image-column {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
+/* Imagen con tamaño adaptativo, bordes redondeados y sombra */
 .image-column img {
   max-width: 100%;
   border-radius: 12px;
